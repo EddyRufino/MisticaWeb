@@ -1,0 +1,179 @@
+.extra-wrap {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    margin-top: 1.5rem;  
+}
+
+.title::before {
+    position: absolute;
+    display: block;
+    text-align: center;
+    width: 80%;
+    height: 8px;
+    background: url(../img/line_bg.png) repeat-x 0 0;
+    margin-top: 1rem;
+    content: "";
+    z-index: -1;
+}
+
+.cuerpo {
+    font-weight: 700;
+    font-size: 24px;
+    margin: 48 0 36px;
+    padding: 0 11px;
+    background: #fff;
+    display: inline-block;
+}
+
+/**********POSTER*************/
+
+// .poster {
+//     width: 500px;
+//     position: relative;
+//   }
+  
+//   .poster img {
+//     width:100%;
+//     display: block;
+//   }
+  
+//   .caption {
+//     position: absolute;
+//     left: 100%;
+//     bottom: 0;
+//     overflow: hidden;
+//     width: 100%;
+//     background: rgba(0, 0, 0, .6);
+//     color: black;
+//     margin: 0;
+//     text-align: center;
+//     width: 100%;
+//     height: 100%;
+//     justify-content: center;
+//     display: flex;
+//     align-items: center;
+//   }
+  
+//   .poster:hover .caption {
+//     left: 0;
+//     color: tomato;
+//     transition: all .3s, color .2s .2s;
+//   }
+
+/**********************/
+
+/**********imagenes*************/
+
+.container--img {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    margin-left: 10%;
+    margin-top: 5rem;
+    width: 80%;
+    line-height: 1rem;  
+}
+
+.container--boda {
+    background: url(./img/boda.jpg) center / cover no-repeat;
+    width: 100%;
+    height: 180px;
+    display: block;
+    margin-bottom: .1rem;
+    
+    &::before {
+        content: '';
+        position : absolute;
+        top : 0;
+        left : 0;
+        width : 100%;
+        height : 180px;
+        background : linear-gradient(
+                        -45deg,
+                        darken($primary-color,40),
+                        $secondary-color
+        );
+        opacity : .5;
+      }
+}
+
+.container--kino {
+    background: url(./img/promo.jpg) center / cover no-repeat;
+    width: 100%;
+    height: 180px;
+    margin-bottom: .14rem;
+
+    &::before {
+        content: '';
+        position : absolute;
+        
+        left : 0;
+        width : 100%;
+        height : 180px;
+        background : linear-gradient(
+                        -45deg,
+                        darken($primary-color,40),
+                        $secondary-color
+        );
+        opacity : .5;
+      }
+}
+
+.container--promo {
+    background: url(./img/kino.jpg) center / cover no-repeat;
+    width: 100%;
+    height: 180px;
+    margin-bottom: .099rem;
+
+    &::before {
+        content: '';
+        position : absolute;
+        
+        left : 0;
+        width : 100%;
+        height : 180px;
+        background : linear-gradient(
+                        -45deg,
+                        darken($primary-color,40),
+                        $secondary-color
+        );
+        opacity : .5;
+      }
+}
+
+.container--infantil {
+    background: url(./img/infantil.jpg) center / cover no-repeat;
+    width: 100%;
+    height: 180px;
+    margin-bottom: 2rem;
+
+    &::before {
+        content: '';
+        position : absolute;
+        
+        left : 0;
+        width : 100%;
+        height : 180px;
+        background : linear-gradient(
+                        -45deg,
+                        darken($primary-color,40),
+                        $secondary-color
+        );
+        opacity : .5;
+      }
+}
+
+.name {
+    display: flex;
+    position: relative;
+    color: red;
+    z-index: 10;
+    margin-top: 25%;
+    justify-content: center;
+}
+
+
+/*********************************/
+
+  
